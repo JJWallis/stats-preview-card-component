@@ -44,6 +44,17 @@ Your users should be able to:
 
 ```html
 <h1>Get <strong>insights</strong> that help your business grow.</h1>
+
+<ul>
+   <li>
+      <span>10k+</span>
+      <span>companies</span>
+   </li>
+   ...
+</ul>
+
+   <!-- This was my first project using an un-ordered list as a flex-container instead of the traditional div, which stylistically makes sense as technically it's a block-level container. The child list-items also provide convenient flex-item containers to control using flex's algorithm. -->
+</ul>
 ```
 
 ```css
@@ -72,8 +83,6 @@ I have included a copy of the solution that I used for this project in the repo.
 ###### TODO
 
 HTML:
-
-Using a <ul> for a flex container - makes sense as a block-level container (1st time - + semantic)
 
 Good practice for using inline semantic tags within <p>'s - strong (instead of a <span> - maybe not appropiate as just style - screenreaders read in diff way which wouldn't make sense) | <section> vs <div>
 
