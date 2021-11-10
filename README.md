@@ -43,8 +43,6 @@ Your users should be able to:
 ### What I learned
 
 ```html
-<h1>Get <strong>insights</strong> that help your business grow.</h1>
-
 <ul>
    <li>
       <span>10k+</span>
@@ -56,6 +54,12 @@ Your users should be able to:
 
 This was my first project using an un-ordered list as a flex-container instead of the traditional div, which stylistically makes sense as technically it's a block-level container. The child list-items also provide convenient flex-item containers to control using flex's algorithm.
 
+```html
+<h1>Get <strong>insights</strong> that help your business grow.</h1>
+```
+
+This project further provided some great practice for experimenting with different inline semantic elements, and the effect they each had on the layout. Although I decided to use a strong tag to place additional emphasis on content within the title, I equally realise that using a <span> tag just to style a word differently is also perfectly valid, since the whole heading would be read aloud with the same level of importance.
+
 ```css
 .background-container {
    background: rgb(170, 92, 219) url('/images/image-header-mobile.jpg') no-repeat
@@ -63,6 +67,12 @@ This was my first project using an un-ordered list as a flex-container instead o
    background-blend-mode: multiply;
 }
 ```
+
+Background-blend-mode + fallback bg colour with img (1st time) |
+
+Border-radius shorthand vs all 4 corners individually + overflow hidden (no need to change dynamically when breakpoint hits)
+
+Min-height - fluid + forced to see img in div with no content
 
 ### Continued development
 
@@ -78,17 +88,3 @@ This was my first project using an un-ordered list as a flex-container instead o
 ## Acknowledgments
 
 I have included a copy of the solution that I used for this project in the repo. This helped me with the wrapping behaviour of each statistic, which wasn't originally working because I was restricting the width of the flex container that was causing my flex-items to not wrap when desired.
-
-###### TODO
-
-HTML:
-
-Good practice for using inline semantic tags within <p>'s - strong (instead of a <span> - maybe not appropiate as just style - screenreaders read in diff way which wouldn't make sense) | <section> vs <div>
-
-CSS:
-
-Background-blend-mode + fallback bg colour with img (1st time) |
-
-Border-radius shorthand vs all 4 corners individually + overflow hidden (no need to change dynamically when breakpoint hits)
-
-Min-height - fluid + forced to see img in div with no content
