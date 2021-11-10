@@ -43,12 +43,14 @@ Your users should be able to:
 ### What I learned
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<h1>Get <strong>insights</strong> that help your business grow.</h1>
 ```
 
 ```css
-.proud-of-this-css {
-   color: papayawhip;
+.background-container {
+   background: rgb(170, 92, 219) url('/images/image-header-mobile.jpg') no-repeat
+      center;
+   background-blend-mode: multiply;
 }
 ```
 
@@ -73,6 +75,12 @@ HTML:
 
 Using a <ul> for a flex container - makes sense as a block-level container (1st time - + semantic)
 
-Good practice for using inline semantic tags within <p>'s - strong (instead of a <span>) | <section> vs <div>
+Good practice for using inline semantic tags within <p>'s - strong (instead of a <span> - maybe not appropiate as just style - screenreaders read in diff way which wouldn't make sense) | <section> vs <div>
 
 CSS:
+
+Background-blend-mode + fallback bg colour with img (1st time) |
+
+Border-radius shorthand vs all 4 corners individually + overflow hidden (no need to change dynamically when breakpoint hits)
+
+Min-height - fluid + forced to see img in div with no content
