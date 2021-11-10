@@ -52,10 +52,9 @@ Your users should be able to:
    </li>
    ...
 </ul>
-
-   <!-- This was my first project using an un-ordered list as a flex-container instead of the traditional div, which stylistically makes sense as technically it's a block-level container. The child list-items also provide convenient flex-item containers to control using flex's algorithm. -->
-</ul>
 ```
+
+This was my first project using an un-ordered list as a flex-container instead of the traditional div, which stylistically makes sense as technically it's a block-level container. The child list-items also provide convenient flex-item containers to control using flex's algorithm.
 
 ```css
 .background-container {
