@@ -71,4 +71,8 @@ I have included a copy of the solution that I used for this project in the repo.
 
 HTML:
 
+Using a <ul> for a flex container - makes sense as a block-level container (1st time - + semantic)
+
+Good practice for using inline semantic tags within <p>'s - strong (instead of a <span>) | <section> vs <div>
+
 CSS:
