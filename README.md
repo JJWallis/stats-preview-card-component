@@ -54,11 +54,9 @@ Your users should be able to:
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
 ### Useful resources
 
--  [CSS Blending Modes](https://www.youtube.com/watch?v=-c94pr41jaI&ab_channel=KevinPowell) - This helped me ...
+-  [CSS Blending Modes](https://www.youtube.com/watch?v=-c94pr41jaI&ab_channel=KevinPowell) - This video helped me gain more confidence in experimenting with different blend modes alongside different styles of images, where in this project I used the 'multiply' value to create a darkened effect over the primary background image.
 
 ## Author
 
@@ -67,7 +65,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Acknowledgments
 
-Solution folder -
+I have included a copy of the solution that I used for this project in the repo. This helped me with the wrapping behaviour of each statistic, which wasn't originally working because I was restricting the width of the flex container that was causing my flex-items to not wrap when desired.
 
 ###### TODO
 
