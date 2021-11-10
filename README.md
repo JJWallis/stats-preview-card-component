@@ -58,21 +58,30 @@ This was my first project using an un-ordered list as a flex-container instead o
 <h1>Get <strong>insights</strong> that help your business grow.</h1>
 ```
 
-This project further provided some great practice for experimenting with different inline semantic elements, and the effect they each had on the layout. Although I decided to use a strong tag to place additional emphasis on content within the title, I equally realise that using a <span> tag just to style a word differently is also perfectly valid, since the whole heading would be read aloud with the same level of importance.
+This project further provided some great practice for experimenting with different inline semantic elements, and the effect they each had on the layout. Although I decided to use a strong tag to place additional emphasis on content within the title, I equally realise that using a `<span>` tag just to style a word differently is also perfectly valid, since the whole heading would be read aloud with the same level of importance.
 
 ```css
 .background-container {
    background: rgb(170, 92, 219) url('/images/image-header-mobile.jpg') no-repeat
       center;
    background-blend-mode: multiply;
+   min-height: 300px;
 }
 ```
 
-Background-blend-mode + fallback bg colour with img (1st time) |
+The blending of a background image with its fallback colour (in case the image becomes unavailable) provides a really nice effect to to the original asset, and can help it 'blend' into the design created for the project. Here I used the multiply value to darken the asset, which looked much closer to the design mockup provided and enabled it to fit in with the very dark blue background colour.
 
-Border-radius shorthand vs all 4 corners individually + overflow hidden (no need to change dynamically when breakpoint hits)
+```css
+.wrapper {
+   min-height: 400px;
+   border-radius: 5px;
+   overflow: hidden;
+}
+```
 
-Min-height - fluid + forced to see img in div with no content
+Additionally, I learned how to change the border-radius of the parent wrapper whilst applying an `overflow: hidden;` to prevent all child content from escaping and ruining the curve. This was a much more efficient method than my original solution, where I manually changed each specific corner at different media breakpoints.
+
+Finally, I was able to apply a min-height to the flex-item (and parent wrapper) housing the background image in order to prevent it from collapsing. This was because it wasn't housing any content in the DOM, as a background image is only for decorative purposes and as such will not be announced by any assistive technology.
 
 ### Continued development
 
