@@ -52,13 +52,13 @@ Your users should be able to:
 </ul>
 ```
 
-This was my first project using an un-ordered list as a flex-container instead of the traditional div, which stylistically makes sense as technically it's a block-level container. The child list-items also provide convenient flex-item containers to control using flex's algorithm.
+This was my first project using an un-ordered list as a flex-container instead of a more traditional div, which stylistically makes sense as technically it's still a block level container. The child list-items also provide a convenient semantic wrapper for flex-items to control using flex's algorithm.
 
 ```html
 <h1>Get <strong>insights</strong> that help your business grow.</h1>
 ```
 
-This project further provided some great practice for experimenting with different inline semantic elements, and the effect they each had on the layout. Although I decided to use a strong tag to place additional emphasis on content within the title, I equally realise that using a `<span>` tag just to style a word differently is also perfectly valid, since the whole heading would be read aloud with the same level of importance.
+This project further provided some great practice for experimenting with different inline semantic elements, and the effect they each had on the layout. Although I decided to use a `<strong>` tag to place additional emphasis on content within the title, I equally realise that using a `<span>` tag just to style a word differently is also perfectly valid, since the whole heading would still be read aloud with the same level of importance.
 
 ```css
 .background-container {
