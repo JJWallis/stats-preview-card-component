@@ -69,7 +69,7 @@ This project further provided some great practice for experimenting with differe
 }
 ```
 
-The blending of a background image with its fallback colour (in case the image becomes unavailable) provides a really nice effect to to the original asset, and can help it 'blend' into the design created for the project. Here I used the multiply value to darken the asset, which looked much closer to the design mockup provided and enabled it to fit in with the very dark blue background colour.
+The blending of a background image with its fallback colour in case the image becomes unavailable, provides a really nice effect on top of the original asset and can help it 'blend' into the design created for the project. Here I used the `multiply` value to darken the asset, which looked much closer to the design and enabled it to fit in with the very dark blue background colour.
 
 ```css
 .wrapper {
