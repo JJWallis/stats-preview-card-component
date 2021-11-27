@@ -79,15 +79,15 @@ The blending of a background image with its fallback colour in case the image be
 }
 ```
 
-Additionally, I learned how to change the border-radius of the parent wrapper whilst applying an `overflow: hidden;` to prevent all child content from escaping and ruining the curve. This was a much more efficient method than my original solution, where I manually changed each specific corner at different media breakpoints.
+Additionally, I learned how to change the border-radius of the parent wrapper whilst applying an `overflow: hidden;` to prevent all child content from escaping underneath and ruining the curve. This was a much more efficient method than my original solution, where I manually changed each specific corner at different media breakpoints.
 
-Finally, I was able to apply a min-height to the flex-item (and parent wrapper) housing the background image in order to prevent it from collapsing. This was because it wasn't housing any content in the DOM, as a background image is only for decorative purposes and as such will not be announced by any assistive technology.
+Finally, I was able to apply a min-height to the flex-item and parent wrapper housing the background image, in order to prevent it from collapsing. This was because it wasn't housing any content in the DOM, and since a background image is only for decorative purposes will not be announced by any assistive technology.
 
 ### Continued development
 
 ### Useful resources
 
--  [CSS Blending Modes](https://www.youtube.com/watch?v=-c94pr41jaI&ab_channel=KevinPowell) - This video helped me gain more confidence in experimenting with different blend modes alongside different styles of images, where in this project I used the 'multiply' value to create a darkened effect over the primary background image.
+-  [CSS Blending Modes](https://www.youtube.com/watch?v=-c94pr41jaI&ab_channel=KevinPowell) - This video helped me gain more confidence in experimenting with different blend modes alongside different styles of images. In this particular project I used the 'multiply' value to create a darkened effect over the primary background image.
 
 ## Author
 
