@@ -52,13 +52,13 @@ Your users should be able to:
 </ul>
 ```
 
-This was my first project using an un-ordered list as a flex-container instead of a more traditional div, which stylistically makes sense as technically it's still a block level container. The child list-items also provide a convenient semantic wrapper for flex-items to control using flex's algorithm.
+This was my first project using an unordered list as a flex container instead of a more traditional div, which stylistically makes sense as technically it's still a block-level element. The child's list items also provide a convenient and semantic wrapper to act as the flex item containers.
 
 ```html
 <h1>Get <strong>insights</strong> that help your business grow.</h1>
 ```
 
-This project further provided some great practice for experimenting with different inline semantic elements, and the effect they each had on the layout. Although I decided to use a `<strong>` tag to place additional emphasis on content within the title, I equally realise that using a `<span>` tag just to style a word differently is also perfectly valid, since the whole heading would still be read aloud with the same level of importance.
+This project further provided some great practice for experimenting with different inline semantic elements, as well as the effect they each had on the layout. Although I decided to use a `<strong>` tag to place additional emphasis on content within the title, I equally realise that using a `<span>` tag just to style a word differently is also perfectly valid, since the whole heading would still be read aloud with the same level of importance.
 
 ```css
 .background-container {
@@ -69,7 +69,7 @@ This project further provided some great practice for experimenting with differe
 }
 ```
 
-The blending of a background image with its fallback colour in case the image becomes unavailable, provides a really nice effect on top of the original asset and can help it 'blend' into the design created for the project. Here I used the `multiply` value to darken the asset, which looked much closer to the design and enabled it to fit in with the very dark blue background colour.
+The blending of a background image with its fallback colour in case the image becomes unavailable, provides a really nice effect on top of the original asset and can help it 'blend' into the original design. Here I used the `multiply` value to darken the asset and enable it to fit in with the very dark blue background colour.
 
 ```css
 .wrapper {
@@ -79,9 +79,9 @@ The blending of a background image with its fallback colour in case the image be
 }
 ```
 
-Additionally, I learned how to change the border-radius of the parent wrapper whilst applying an `overflow: hidden;` to prevent all child content from escaping underneath and ruining the curve. This was a much more efficient method than my original solution, where I manually changed each specific corner at different media breakpoints.
+Additionally, I learned how to change the border-radius of the parent wrapper whilst applying an `overflow: hidden;` to prevent all child content from escaping underneath and ruining the curve. This was a much more efficient method than my original solution, where I manually changed each specific corner at different viewports.
 
-Finally, I was able to apply a min-height to the flex-item and parent wrapper housing the background image, in order to prevent it from collapsing. This was because it wasn't housing any content in the DOM, and since a background image is only for decorative purposes will not be announced by any assistive technology.
+Finally, I was able to apply a `min-height` to the flex-item and parent wrapper housing the background image in order to prevent it from collapsing. This was because it wasn't housing any content in the DOM, and since a background image is only for decorative purposes, it won't be announced by any assistive technology.
 
 ### Continued development
 
@@ -92,8 +92,8 @@ Finally, I was able to apply a min-height to the flex-item and parent wrapper ho
 ## Author
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
--  Linkedin - [Joshua Jameson-Wallis]()
+-  Linkedin - [Joshua Jameson-Wallis](https://www.linkedin.com/in/joshua-jameson-wallis/)
 
 ## Acknowledgments
 
-I have included a copy of the solution that I used for this project in the repo. This helped me with the wrapping behaviour of each statistic, which wasn't originally working because I was restricting the width of the flex container that was causing my flex-items to not wrap when desired.
+I have included a copy of the solution that I used for this project, since it helped me with the wrapping behaviour of each statistic, which wasn't originally working because I was restricting the width of the flex container (thus causing my flex items to not wrap when desired).
