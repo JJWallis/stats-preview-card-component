@@ -14,7 +14,6 @@ This is a solution to the [Stats preview card component challenge](linkhttps://w
    -  [Continued development](#continued-development)
    -  [Useful resources](#useful-resources)
 -  [Author](#author)
--  [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -79,7 +78,7 @@ The blending of a background image with its fallback colour in case the image be
 }
 ```
 
-Additionally, I learned how to change the border-radius of the parent wrapper whilst applying an `overflow: hidden;` to prevent all child content from escaping underneath and ruining the curve. This was a much more efficient method than my original solution, where I manually changed each specific corner at different viewports.
+I learned how to change the border-radius of the parent wrapper whilst applying an `overflow: hidden;` to prevent all child content from escaping underneath and ruining its curve. This was a much more efficient method than my original solution, where I manually changed each specific corner at different viewports.
 
 Finally, I was able to apply a `min-height` to the flex-item and parent wrapper housing the background image in order to prevent it from collapsing. This was because it wasn't housing any content in the DOM, and since a background image is only for decorative purposes, it won't be announced by any assistive technology.
 
@@ -87,13 +86,9 @@ Finally, I was able to apply a `min-height` to the flex-item and parent wrapper 
 
 ### Useful resources
 
--  [CSS Blending Modes](https://www.youtube.com/watch?v=-c94pr41jaI&ab_channel=KevinPowell) - This video helped me gain more confidence in experimenting with different blend modes alongside different styles of images. In this particular project I used the 'multiply' value to create a darkened effect over the primary background image.
+-  [CSS Blending Modes](https://www.youtube.com/watch?v=-c94pr41jaI&ab_channel=KevinPowell) - This video helped me gain more confidence in experimenting with different blend modes alongside different styles of images. In this project I used the 'multiply' value to create a darkened effect over the primary background image.
 
 ## Author
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
 -  Linkedin - [Joshua Jameson-Wallis](https://www.linkedin.com/in/joshua-jameson-wallis/)
-
-## Acknowledgments
-
-I have included a copy of the solution that I used for this project, since it helped me with the wrapping behaviour of each statistic, which wasn't originally working because I was restricting the width of the flex container (thus causing my flex items to not wrap when desired).
