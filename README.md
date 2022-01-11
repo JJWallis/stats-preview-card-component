@@ -90,5 +90,5 @@ Finally, I was able to apply a `min-height` to the flex-item and parent wrapper 
 
 ## Author
 
--  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
+-  Website - [Joshua Jameson-Wallis](https://www.joshuajamesonwallis.com/)
 -  Linkedin - [Joshua Jameson-Wallis](https://www.linkedin.com/in/joshua-jameson-wallis/)
