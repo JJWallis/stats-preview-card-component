@@ -1,145 +1,142 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
-:root {
-  --main-background: 233, 47%, 7%;
-  --card-background: 244, 38%, 16%;
-  --accent-color: 277, 64%, 61%;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
-  --heading-font: "Inter", sans-serif;
-  --primary-font: "Lexend Deca", sans-serif;
+:root {
+   --main-background: 233, 47%, 7%;
+   --card-background: 244, 38%, 16%;
+   --accent-color: 277, 64%, 61%;
+
+   --heading-font: 'Inter', sans-serif;
+   --primary-font: 'Lexend Deca', sans-serif;
 }
 html,
 body {
-  background-color: hsla(var(--main-background), 1);
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
+   background-color: hsla(var(--main-background), 1);
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   width: 100%;
 }
 *,
 * * {
-  box-sizing: border-box;
+   box-sizing: border-box;
 }
 body {
-  font-size: 15px;
-  font-family: var(--primary-font);
+   font-size: 15px;
+   font-family: var(--primary-font);
 }
 
 main {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1em;
 }
 .card {
-  background-color: hsla(var(--card-background));
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
+   background-color: hsla(var(--card-background));
+   border-radius: 8px;
+   overflow: hidden;
+   display: flex;
+   flex-direction: row-reverse;
+   flex-wrap: wrap;
 }
 .card--img {
-  background: url("../images/image-header-mobile.jpg")
-    hsla(var(--accent-color), 1);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: multiply;
-  width: 100%;
-  height: 200px;
+   background: url('../images/image-header-mobile.jpg')
+      hsla(var(--accent-color), 1);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-blend-mode: multiply;
+   width: 100%;
+   height: 200px;
 }
 .card--body {
-  padding: 1.5em;
-  text-align: center;
-  color: hsla(0, 0%, 100%, 0.75);
+   padding: 1.5em;
+   text-align: center;
+   color: hsla(0, 0%, 100%, 0.75);
 }
 .card--body p {
-  line-height: 1.5em;
+   line-height: 1.5em;
 }
 .card--title,
 .number,
 .label {
-  font-family: var(--heading-font);
-  color: white;
+   font-family: var(--heading-font);
+   color: white;
 }
 .card--title {
-  font-weight: 700;
+   font-weight: 700;
 }
 
 .analytics {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  list-style: none;
-  padding-left: 0;
-  border: 1px solid;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   list-style: none;
+   padding-left: 0;
 }
 .analytics > * {
-  flex: 1 1 200px;
-  padding: 1em;
-  border: 1px solid;
+   flex: 1 1 200px;
+   padding: 1em;
 }
 .number,
 .label {
-  display: block;
+   display: block;
 }
 .number {
-  font-size: 1.5em;
-  line-height: 2em;
-  font-weight: 700;
+   font-size: 1.5em;
+   line-height: 2em;
+   font-weight: 700;
 }
 .label {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: hsla(0, 0%, 100%, 0.6);
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+   color: hsla(0, 0%, 100%, 0.6);
 }
 
 footer {
-  text-align: center;
-  color: white;
-  padding: 0.5em;
+   text-align: center;
+   color: white;
+   padding: 0.5em;
 }
 
-/* Desktop and bigger tablets */
 @media screen and (min-width: 768px) {
-  main {
-    min-height: 100vh;
-  }
+   main {
+      min-height: 100vh;
+   }
 
-  .card {
-    flex-wrap: nowrap;
-  }
-  .card > * {
-    flex: 1 1 50%;
-  }
-  .card--img {
-    background: url("../images/image-header-desktop.jpg")
-      hsla(var(--accent-color), 1);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: inherit;
-  }
-  .card--body {
-    text-align: left;
-    text-align: inline-start;
-    padding: 4em;
-  }
+   .card {
+      flex-wrap: nowrap;
+   }
+   .card > * {
+      flex: 1 1 50%;
+   }
+   .card--img {
+      background: url('../images/image-header-desktop.jpg')
+         hsla(var(--accent-color), 1);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: inherit;
+   }
+   .card--body {
+      text-align: left;
+      text-align: inline-start;
+      padding: 4em;
+   }
 
-  .analytics {
-    flex-wrap: nowrap;
-    margin-top: 4em;
-  }
-  .analytics > *:nth-child(2) {
-    margin: 0 1em;
-  }
-  .analytics > * {
-    padding: 0;
-  }
+   .analytics {
+      flex-wrap: nowrap;
+      margin-top: 4em;
+   }
+   .analytics > *:nth-child(2) {
+      margin: 0 1em;
+   }
+   .analytics > * {
+      padding: 0;
+   }
 }
 
-/* Modifications */
 .accent {
-  color: hsla(var(--accent-color), 1);
+   color: hsla(var(--accent-color), 1);
 }
